@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.gallery {
+  width: 800px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 255px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(2,2);
+  transition: .1s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color:  rgb(11, 216, 72);;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="index.html">Anasayfa</a></li>
+            <li><a href="urunlerimiz.html">Ürünlerimiz</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="sepet.html">Sepetimiz</a></li>
+        </ul>
+    </nav>
+
+
+
+    <h1> <strong> <u>Ürünlerimiz</u></strong></h1>
+
+<div class="gallery cf">
+  <div>
+    <img src="https://www.ascicekevi.com/yuklemeler/cicek/euphorbia-kaktus-150cm-3.jpg" />
+  </div>
+  <div>
+    <img src="https://www.ascicekevi.com/yuklemeler/cicek/samur-serisi-renkli-kaktusler2.jpg" />
+  </div>
+  <div>
+    <img src="https://www.ascicekevi.com/yuklemeler/cicek/samur-kaktus-aranjman-3.jpg" />
+  </div>
+  <div>
+    <img src="https://www.ascicekevi.com/yuklemeler/cicek/kayada-sukkulentler-butik-cicek-tasarim-3resim-min.jpg" />
+  </div>
+  <div>
+    <img src="https://www.ascicekevi.com/yuklemeler/cicek/tastakikaktuslar-renklikaktus-kaktussiparisi-cicekyolla-bloomandfresh-3resim-min.jpg" />
+  </div>
+  <div>
+    <img src="https://www.ascicekevi.com/yuklemeler/cicek/dev-kaktus-aranjman-7.jpg" />
+  </div>
+  <div>
+    <img src="https://www.ascicekevi.com/yuklemeler/cicek/sukulent-tersukulent-teraryum-megaresim_1.jpg" />
+  </div>
+  <div>
+    <img src="https://www.ascicekevi.com/yuklemeler/cicek/euphorbia-kaktus-150cm-1.jpg" />
+  </div>
+  <div>
+    <img src="https://www.ascicekevi.com/yuklemeler/cicek/dev-kaktus-aranjman-4.jpg" />
+  </div>
+</div>
+</body>
+</html>
